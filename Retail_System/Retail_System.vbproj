@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09528C31-77F1-41B2-827F-BE9218414683}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Retail_System.My.MyApplication</StartupObject>
+    <RootNamespace>Retail_System</RootNamespace>
+    <AssemblyName>Retail_System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>uk.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Retail_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Retail_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '调试|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\调试\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <DocumentationFile>Retail_System.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Retail_System.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Retail_System.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '调试|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\调试\</OutputPath>
+    <DocumentationFile>Retail_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Debug\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Debug\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Common, Version=1.0.20031.116, Culture=neutral, PublicKeyToken=e272bb32d11b1948">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Debug\Interop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Debug\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PClass, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PClass\bin\Debug\PClass.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC\stdole\7.0.3300.0__b03f5f7f11d50a3a\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="XtremeCommandBars" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bas\ModuleRight.vb" />
+    <Compile Include="Chat\Bas\ChatClient.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chat\Bas\cHtml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chat\Bas\cPackage.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chat\Bas\SystemIcon.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chat\Dialog.Designer.vb">
+      <DependentUpon>Dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\Dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\Face\ChatRes.Designer.vb">
+      <DependentUpon>ChatRes.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Chat\FormFace.Designer.vb">
+      <DependentUpon>FormFace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\FormFace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\FormFaceSelect.Designer.vb">
+      <DependentUpon>FormFaceSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\FormFaceSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\FormPic.Designer.vb">
+      <DependentUpon>FormPic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\FormPic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\UserImage.Designer.vb">
+      <DependentUpon>UserImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\UserImage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chat\UserList.Designer.vb">
+      <DependentUpon>UserList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\UserList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FormList.Designer.vb">
+      <DependentUpon>FormList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FormList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FormLogon.Designer.vb">
+      <DependentUpon>FormLogon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FormLogon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FormDBSelect.Designer.vb">
+      <DependentUpon>FormDBSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FormDBSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FormDB.Designer.vb">
+      <DependentUpon>FormDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FormDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FormPwd.Designer.vb">
+      <DependentUpon>FormPwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FormPwd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FormUpdate.Designer.vb">
+      <DependentUpon>FormUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FormUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\MainWindow.Designer.vb">
+      <DependentUpon>MainWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\MainWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bas\ModuleData.vb" />
+    <Compile Include="Bas\ModuleMain.vb" />
+    <Compile Include="Frm\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Dialog.resx">
+      <DependentUpon>Dialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\Face\ChatRes.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ChatRes.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\FormFace.resx">
+      <DependentUpon>FormFace.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\FormFaceSelect.resx">
+      <DependentUpon>FormFaceSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\FormPic.resx">
+      <DependentUpon>FormPic.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\UserImage.resx">
+      <DependentUpon>UserImage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\UserList.resx">
+      <DependentUpon>UserList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FormList.resx">
+      <DependentUpon>FormList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FormLogon.resx">
+      <DependentUpon>FormLogon.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FormDB.resx">
+      <DependentUpon>FormDB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FormDBSelect.resx">
+      <DependentUpon>FormDBSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FormPwd.resx">
+      <DependentUpon>FormPwd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FormUpdate.resx">
+      <DependentUpon>FormUpdate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\MainWindow.resx">
+      <DependentUpon>MainWindow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxXtremeCommandBars">
+      <Guid>{555E8FCC-830E-45CC-AF00-A012D5AE7451}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxXtremeSuiteControls">
+      <Guid>{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LB.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\End.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image_99999994.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image_99999991.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image_99999992.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image_99999993.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network_links.png" />
+    <None Include="app.config" />
+    <None Include="Resources\Cmd_Close_Down.bmp" />
+    <None Include="Resources\Cmd_Close.bmp" />
+    <None Include="Resources\Cmd_Close_light.bmp" />
+    <None Include="Resources\Image_99999997.png" />
+    <None Include="Resources\Cmd_Down.PNG" />
+    <None Include="Resources\Cmd_Light.PNG" />
+    <None Include="Resources\Cmd_Image.PNG" />
+    <None Include="Resources\Image_99999996.png" />
+    <None Include="Resources\Image_99999995.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\PBaseClass.vbproj">
+      <Project>{27F21734-C4E3-4D81-89F0-105BD0911189}</Project>
+      <Name>PBaseClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v33_323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V3_Vis.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActiveX Cache.ico" />
+    <Content Include="Chat\Face\DetailBack.png" />
+    <Content Include="Chat\Face\FaceBack.png" />
+    <Content Include="Chat\Face\FaceBackLight.png" />
+    <Content Include="Chat\Face\FaceBackLight_Long.png" />
+    <Content Include="Chat\Face\gif1.gif" />
+    <Content Include="Chat\Face\gif10.gif" />
+    <Content Include="Chat\Face\gif100.gif" />
+    <Content Include="Chat\Face\gif101.gif" />
+    <Content Include="Chat\Face\gif102.gif" />
+    <Content Include="Chat\Face\gif103.gif" />
+    <Content Include="Chat\Face\gif104.gif" />
+    <Content Include="Chat\Face\gif105.gif" />
+    <Content Include="Chat\Face\gif11.gif" />
+    <Content Include="Chat\Face\gif12.gif" />
+    <Content Include="Chat\Face\gif13.gif" />
+    <Content Include="Chat\Face\gif14.gif" />
+    <Content Include="Chat\Face\gif15.gif" />
+    <Content Include="Chat\Face\gif16.gif" />
+    <Content Include="Chat\Face\gif17.gif" />
+    <Content Include="Chat\Face\gif18.gif" />
+    <Content Include="Chat\Face\gif19.gif" />
+    <Content Include="Chat\Face\gif2.gif" />
+    <Content Include="Chat\Face\gif20.gif" />
+    <Content Include="Chat\Face\gif21.gif" />
+    <Content Include="Chat\Face\gif22.gif" />
+    <Content Include="Chat\Face\gif23.gif" />
+    <Content Include="Chat\Face\gif24.gif" />
+    <Content Include="Chat\Face\gif25.gif" />
+    <Content Include="Chat\Face\gif26.gif" />
+    <Content Include="Chat\Face\gif27.gif" />
+    <Content Include="Chat\Face\gif28.gif" />
+    <Content Include="Chat\Face\gif29.gif" />
+    <Content Include="Chat\Face\gif3.gif" />
+    <Content Include="Chat\Face\gif30.gif" />
+    <Content Include="Chat\Face\gif31.gif" />
+    <Content Include="Chat\Face\gif32.gif" />
+    <Content Include="Chat\Face\gif33.gif" />
+    <Content Include="Chat\Face\gif34.gif" />
+    <Content Include="Chat\Face\gif35.gif" />
+    <Content Include="Chat\Face\gif36.gif" />
+    <Content Include="Chat\Face\gif37.gif" />
+    <Content Include="Chat\Face\gif38.gif" />
+    <Content Include="Chat\Face\gif39.gif" />
+    <Content Include="Chat\Face\gif4.gif" />
+    <Content Include="Chat\Face\gif40.gif" />
+    <Content Include="Chat\Face\gif41.gif" />
+    <Content Include="Chat\Face\gif42.gif" />
+    <Content Include="Chat\Face\gif43.gif" />
+    <Content Include="Chat\Face\gif44.gif" />
+    <Content Include="Chat\Face\gif45.gif" />
+    <Content Include="Chat\Face\gif46.gif" />
+    <Content Include="Chat\Face\gif47.gif" />
+    <Content Include="Chat\Face\gif48.gif" />
+    <Content Include="Chat\Face\gif49.gif" />
+    <Content Include="Chat\Face\gif5.gif" />
+    <Content Include="Chat\Face\gif50.gif" />
+    <Content Include="Chat\Face\gif51.gif" />
+    <Content Include="Chat\Face\gif52.gif" />
+    <Content Include="Chat\Face\gif53.gif" />
+    <Content Include="Chat\Face\gif54.gif" />
+    <Content Include="Chat\Face\gif55.gif" />
+    <Content Include="Chat\Face\gif56.gif" />
+    <Content Include="Chat\Face\gif57.gif" />
+    <Content Include="Chat\Face\gif58.gif" />
+    <Content Include="Chat\Face\gif59.gif" />
+    <Content Include="Chat\Face\gif6.gif" />
+    <Content Include="Chat\Face\gif60.gif" />
+    <Content Include="Chat\Face\gif61.gif" />
+    <Content Include="Chat\Face\gif62.gif" />
+    <Content Include="Chat\Face\gif63.gif" />
+    <Content Include="Chat\Face\gif64.gif" />
+    <Content Include="Chat\Face\gif65.gif" />
+    <Content Include="Chat\Face\gif66.gif" />
+    <Content Include="Chat\Face\gif67.gif" />
+    <Content Include="Chat\Face\gif68.gif" />
+    <Content Include="Chat\Face\gif69.gif" />
+    <Content Include="Chat\Face\gif7.gif" />
+    <Content Include="Chat\Face\gif70.gif" />
+    <Content Include="Chat\Face\gif71.gif" />
+    <Content Include="Chat\Face\gif72.gif" />
+    <Content Include="Chat\Face\gif73.gif" />
+    <Content Include="Chat\Face\gif74.gif" />
+    <Content Include="Chat\Face\gif75.gif" />
+    <Content Include="Chat\Face\gif76.gif" />
+    <Content Include="Chat\Face\gif77.gif" />
+    <Content Include="Chat\Face\gif78.gif" />
+    <Content Include="Chat\Face\gif79.gif" />
+    <Content Include="Chat\Face\gif8.gif" />
+    <Content Include="Chat\Face\gif80.gif" />
+    <Content Include="Chat\Face\gif81.gif" />
+    <Content Include="Chat\Face\gif82.gif" />
+    <Content Include="Chat\Face\gif83.gif" />
+    <Content Include="Chat\Face\gif84.gif" />
+    <Content Include="Chat\Face\gif85.gif" />
+    <Content Include="Chat\Face\gif86.gif" />
+    <Content Include="Chat\Face\gif87.gif" />
+    <Content Include="Chat\Face\gif88.gif" />
+    <Content Include="Chat\Face\gif89.gif" />
+    <Content Include="Chat\Face\gif9.gif" />
+    <Content Include="Chat\Face\gif90.gif" />
+    <Content Include="Chat\Face\gif91.gif" />
+    <Content Include="Chat\Face\gif92.gif" />
+    <Content Include="Chat\Face\gif93.gif" />
+    <Content Include="Chat\Face\gif94.gif" />
+    <Content Include="Chat\Face\gif95.gif" />
+    <Content Include="Chat\Face\gif96.gif" />
+    <Content Include="Chat\Face\gif97.gif" />
+    <Content Include="Chat\Face\gif98.gif" />
+    <Content Include="Chat\Face\gif99.gif" />
+    <Content Include="Chat\Face\GifSmallError.gif" />
+    <Content Include="Chat\Face\gifSystemInfo.gif" />
+    <Content Include="Chat\Face\gifSystemOk.gif" />
+    <Content Include="Chat\Face\HeadBack.PNG" />
+    <Content Include="Chat\Face\PngCutPic.png" />
+    <Content Include="Chat\Face\PngFace.png" />
+    <Content Include="Chat\Face\PngFont.png" />
+    <Content Include="Chat\Face\PngFontColor.png" />
+    <Content Include="Chat\Face\PngFontLightColor.png" />
+    <Content Include="Chat\Face\PngLastMsg.png" />
+    <Content Include="Chat\Face\PngSendFile.png" />
+    <Content Include="Chat\Face\PngSendPic.png" />
+    <Content Include="Chat\Face\PngShake.png" />
+    <Content Include="Chat\Face\SoundMsg.wav" />
+    <Content Include="Chat\Face\SoundShake.wav" />
+    <Content Include="uk.ico" />
+    <None Include="Resources\uk.ico" />
+    <None Include="Resources\CloseMSN.bmp" />
+    <None Include="Resources\pictures.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

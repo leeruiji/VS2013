@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E6B4F54-ACD6-46EA-92F9-24A8025FB386}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DN155_AtMachine</RootNamespace>
+    <AssemblyName>DN155_AtMachine</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Retail_System\bin\Debug\dll\</OutputPath>
+    <DocumentationFile>DN155_AtMachine.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Retail_System\bin\Debug\Debug\</OutputPath>
+    <DocumentationFile>DN155_AtMachine.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '调试|AnyCPU' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\调试\</OutputPath>
+    <DocumentationFile>DN155_AtMachine.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\Interop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.zkemkeeper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\控件\Interop.zkemkeeper.dll</HintPath>
+    </Reference>
+    <Reference Include="PClass, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PClass\bin\Debug\PClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassMain.vb" />
+    <Compile Include="F1551_班次设定\F15517_Real_Shift.Designer.vb">
+      <DependentUpon>F15517_Real_Shift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15517_Real_Shift.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15518_Real_Shift_Msg.Designer.vb">
+      <DependentUpon>F15518_Real_Shift_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15518_Real_Shift_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15500_AtMachine.Designer.vb">
+      <DependentUpon>F15500_AtMachine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15500_AtMachine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15501_AtMachine_Msg.Designer.vb">
+      <DependentUpon>F15501_AtMachine_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15501_AtMachine_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15540_AT_ReleasePass.Designer.vb">
+      <DependentUpon>F15540_AT_ReleasePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15540_AT_ReleasePass.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15541_AT_ReleasePass_Msg.Designer.vb">
+      <DependentUpon>F15541_AT_ReleasePass_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15541_AT_ReleasePass_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15542_AT_EmployeeSel.Designer.vb">
+      <DependentUpon>F15542_AT_EmployeeSel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15542_AT_EmployeeSel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F156\cAt_Change.vb" />
+    <Compile Include="F156\F15606_PBB_Mx_Msg.Designer.vb">
+      <DependentUpon>F15606_PBB_Mx_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F156\F15606_PBB_Mx_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F156\F15605_PBB_Mx.Designer.vb">
+      <DependentUpon>F15605_PBB_Mx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F156\F15605_PBB_Mx.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15503_AT_EmployeeSel.Designer.vb">
+      <DependentUpon>F15503_AT_EmployeeSel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15503_AT_EmployeeSel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15515_Shift_Moduel.Designer.vb">
+      <DependentUpon>F15515_Shift_Moduel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15515_Shift_Moduel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15516_Shift_Moduel_Msg.Designer.vb">
+      <DependentUpon>F15516_Shift_Moduel_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15516_Shift_Moduel_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15521_AT_SignCard_Msg.Designer.vb">
+      <DependentUpon>F15521_AT_SignCard_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15521_AT_SignCard_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15510_AT_Shifts.Designer.vb">
+      <DependentUpon>F15510_AT_Shifts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15510_AT_Shifts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15511_AT_Shifts_Msg.Designer.vb">
+      <DependentUpon>F15511_AT_Shifts_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F1551_班次设定\F15511_AT_Shifts_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15504_AtMachine.Designer.vb">
+      <DependentUpon>F15504_AtMachine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15504_AtMachine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15505_AtMachine_Msg.Designer.vb">
+      <DependentUpon>F15505_AtMachine_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15505_AtMachine_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F156\F15620_At_Change.Designer.vb">
+      <DependentUpon>F15620_At_Change.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F156\F15620_At_Change.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15520_AT_SignCard.Designer.vb">
+      <DependentUpon>F15520_AT_SignCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15520_AT_SignCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15530_AT_Leave.Designer.vb">
+      <DependentUpon>F15530_AT_Leave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15530_AT_Leave.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F155\F15531_AT_Leave_Msg.Designer.vb">
+      <DependentUpon>F15531_AT_Leave_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F155\F15531_AT_Leave_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F1551_班次设定\ModuelDay.Designer.vb">
+      <DependentUpon>ModuelDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F1551_班次设定\ModuelDay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F156\F15600_At_Data_Mx.Designer.vb">
+      <DependentUpon>F15600_At_Data_Mx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F156\F15600_At_Data_Mx.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F156\F15610_Attendance_Data.Designer.vb">
+      <DependentUpon>F15610_Attendance_Data.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F156\F15610_Attendance_Data.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F156\F15611_Attendance_Msg.Designer.vb">
+      <DependentUpon>F15611_Attendance_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F156\F15611_Attendance_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F156\F15612_Attendance_Change.Designer.vb">
+      <DependentUpon>F15612_Attendance_Change.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F156\F15612_Attendance_Change.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F156\F15630_Attendance_Detailed.Designer.vb">
+      <DependentUpon>F15630_Attendance_Detailed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F156\F15630_Attendance_Detailed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F156\UserDay.Designer.vb">
+      <DependentUpon>UserDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F156\UserDay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="iShift.vb" />
+    <Compile Include="M880.vb" />
+    <Compile Include="ModuleAT.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Module_Dao.vb" />
+    <Compile Include="Module_SQL.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\R15630_Attendance_Detailed.vb" />
+    <Compile Include="Report\R15600_At_Data_Mx.vb" />
+    <Compile Include="Report\R15605_PBB_Mx.vb">
+    </Compile>
+    <Compile Include="Report\R15610_Attendance_Data.vb">
+    </Compile>
+    <Compile Include="Web References\S_AT\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="F1551_班次设定\F15517_Real_Shift.resx">
+      <DependentUpon>F15517_Real_Shift.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F1551_班次设定\F15518_Real_Shift_Msg.resx">
+      <DependentUpon>F15518_Real_Shift_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15500_AtMachine.resx">
+      <DependentUpon>F15500_AtMachine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15501_AtMachine_Msg.resx">
+      <DependentUpon>F15501_AtMachine_Msg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15540_AT_ReleasePass.resx">
+      <DependentUpon>F15540_AT_ReleasePass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15541_AT_ReleasePass_Msg.resx">
+      <DependentUpon>F15541_AT_ReleasePass_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15542_AT_EmployeeSel.resx">
+      <DependentUpon>F15542_AT_EmployeeSel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F156\F15606_PBB_Mx_Msg.resx">
+      <DependentUpon>F15606_PBB_Mx_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F156\F15605_PBB_Mx.resx">
+      <DependentUpon>F15605_PBB_Mx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15503_AT_EmployeeSel.resx">
+      <DependentUpon>F15503_AT_EmployeeSel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F1551_班次设定\F15515_Shift_Moduel.resx">
+      <DependentUpon>F15515_Shift_Moduel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F1551_班次设定\F15516_Shift_Moduel_Msg.resx">
+      <DependentUpon>F15516_Shift_Moduel_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15521_AT_SignCard_Msg.resx">
+      <DependentUpon>F15521_AT_SignCard_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F1551_班次设定\F15510_AT_Shifts.resx">
+      <DependentUpon>F15510_AT_Shifts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F1551_班次设定\F15511_AT_Shifts_Msg.resx">
+      <DependentUpon>F15511_AT_Shifts_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15504_AtMachine.resx">
+      <DependentUpon>F15504_AtMachine.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15505_AtMachine_Msg.resx">
+      <DependentUpon>F15505_AtMachine_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F156\F15620_At_Change.resx">
+      <DependentUpon>F15620_At_Change.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15520_AT_SignCard.resx">
+      <DependentUpon>F15520_AT_SignCard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15530_AT_Leave.resx">
+      <DependentUpon>F15530_AT_Leave.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F155\F15531_AT_Leave_Msg.resx">
+      <DependentUpon>F15531_AT_Leave_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F1551_班次设定\ModuelDay.resx">
+      <DependentUpon>ModuelDay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F156\F15600_At_Data_Mx.resx">
+      <DependentUpon>F15600_At_Data_Mx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F156\F15610_Attendance_Data.resx">
+      <DependentUpon>F15610_Attendance_Data.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F156\F15611_Attendance_Msg.resx">
+      <DependentUpon>F15611_Attendance_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F156\F15612_Attendance_Change.resx">
+      <DependentUpon>F15612_Attendance_Change.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F156\F15630_Attendance_Detailed.resx">
+      <DependentUpon>F15630_Attendance_Detailed.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F156\UserDay.resx">
+      <DependentUpon>UserDay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\PBaseClass.vbproj">
+      <Project>{27F21734-C4E3-4D81-89F0-105BD0911189}</Project>
+      <Name>PBaseClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReFresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxXtremeSuiteControls">
+      <Guid>{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="XtremeSuiteControls">
+      <Guid>{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="zkemkeeper">
+      <Guid>{FE9DED34-E159-408E-8490-B720A5E632C7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.16.10/At_Change.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\S_AT\</RelPath>
+      <UpdateFromURL>http://192.168.16.10/At_Change.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DN155_AtMachine_S_AT_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\S_AT\At_Change.disco" />
+    <None Include="Web References\S_AT\At_Change.wsdl" />
+    <None Include="Web References\S_AT\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

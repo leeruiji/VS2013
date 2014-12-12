@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27F21734-C4E3-4D81-89F0-105BD0911189}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BaseClass</RootNamespace>
+    <AssemblyName>BaseClass</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Text</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BaseClass.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BaseClass.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.XtremeCommandBars">
+      <HintPath>..\..\冠毅纺织\V3_GYFZ\公共引用\AxInterop.XtremeCommandBars.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.XtremeSuiteControls">
+      <HintPath>..\..\冠毅纺织\V3_GYFZ\公共引用\AxInterop.XtremeSuiteControls.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.XtremeCommandBars">
+      <HintPath>..\..\冠毅纺织\V3_GYFZ\公共引用\Interop.XtremeCommandBars.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.XtremeSuiteControls">
+      <HintPath>..\..\冠毅纺织\V3_GYFZ\公共引用\Interop.XtremeSuiteControls.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PClass, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PClass\bin\Debug\PClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Module_SQL.vb" />
+    <Compile Include="sStroe_Area.vb" />
+    <Compile Include="Tooltip\iTooltipChild.vb" />
+    <Compile Include="Tooltip\ToolTipCtrl.Designer.vb">
+      <DependentUpon>ToolTipCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tooltip\ToolTipCtrl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserSearch\SearchCol.Designer.vb">
+      <DependentUpon>SearchCol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearch\SearchCol.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserSearch\SearchForm.Designer.vb">
+      <DependentUpon>SearchForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearch\SearchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSearch\SearchItem.Designer.vb">
+      <DependentUpon>SearchItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearch\SearchItem.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserSearch\ToolStripSearch.Designer.vb">
+      <DependentUpon>ToolStripSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearch\ToolStripSearch.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboDept.designer.vb">
+      <DependentUpon>ComboDept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboDept.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboAttribute.Designer.vb">
+      <DependentUpon>ComboAttribute.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboAttribute.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboSupplier_Kitchen.Designer.vb">
+      <DependentUpon>ComboSupplier_Kitchen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboSupplier_Kitchen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboSupplier_Metal.Designer.vb">
+      <DependentUpon>ComboSupplier_Metal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboSupplier_Metal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboSupplier_PolyBag.Designer.vb">
+      <DependentUpon>ComboSupplier_PolyBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboSupplier_PolyBag.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboSupplier_Coal.Designer.vb">
+      <DependentUpon>ComboSupplier_Coal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboSupplier_Coal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboSG.Designer.vb">
+      <DependentUpon>ComboSG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboSG.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboWL_Name.Designer.vb">
+      <DependentUpon>ComboWL_Name.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboWL_Name.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\旧控件\Col_List.Designer.vb">
+      <DependentUpon>Col_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\旧控件\Col_List.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientSupplier.vb" />
+    <Compile Include="ComFun.vb" />
+    <Compile Include="Emplyee.vb" />
+    <Compile Include="FindOption.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="列表控件\ComboBZ.Designer.vb">
+      <DependentUpon>ComboBZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboBZ.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboBZC.Designer.vb">
+      <DependentUpon>ComboBZC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboBZC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboClient.Designer.vb">
+      <DependentUpon>ComboClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboClient.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboEmployee.Designer.vb">
+      <DependentUpon>ComboEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboEmployee.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboJGDW.Designer.vb">
+      <DependentUpon>ComboJGDW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboJGDW.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboSupplier.Designer.vb">
+      <DependentUpon>ComboSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboSupplier.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboWL.Designer.vb">
+      <DependentUpon>ComboWL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboWL.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\ComboZhiChang.Designer.vb">
+      <DependentUpon>ComboZhiChang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\ComboZhiChang.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\原形\ComBoList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="列表控件\原形\ComBoListCtrl.Designer.vb">
+      <DependentUpon>ComBoListCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\原形\ComBoListCtrl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="列表控件\原形\cSearchType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="列表控件\原形\FormColList.Designer.vb">
+      <DependentUpon>FormColList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\原形\FormColList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="列表控件\原形\ICol_Parent.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="列表控件\原形\ToolStripComboList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="列表控件\旧控件\Employee_List.Designer.vb">
+      <DependentUpon>Employee_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="列表控件\旧控件\Employee_List.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\BenHeightDesigner.vb" />
+    <Compile Include="自定义控件\BillLog.Designer.vb">
+      <DependentUpon>BillLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\BillLog.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\BillLogItem.Designer.vb">
+      <DependentUpon>BillLogItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\BillLogItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\GH_BillLog.Designer.vb">
+      <DependentUpon>GH_BillLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\GH_BillLog.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\GH_BillLogItem.Designer.vb">
+      <DependentUpon>GH_BillLogItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\GH_BillLogItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\MonthPicker.Designer.vb">
+      <DependentUpon>MonthPicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\MonthPicker.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\StripButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="自定义控件\SumColListDialog.Designer.vb">
+      <DependentUpon>SumColListDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\SumColListDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="自定义控件\SumFG.Designer.vb">
+      <DependentUpon>SumFG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\SumFG.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="自定义控件\TitleTextBox.Designer.vb">
+      <DependentUpon>TitleTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\TitleTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\ToolStripMonthPicker.Designer.vb">
+      <DependentUpon>ToolStripMonthPicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\ToolStripMonthPicker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="自定义控件\YearMonth.Designer.vb">
+      <DependentUpon>YearMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\YearMonth.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSearch\SearchCol.resx">
+      <DependentUpon>SearchCol.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSearch\SearchForm.resx">
+      <DependentUpon>SearchForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSearch\SearchItem.resx">
+      <DependentUpon>SearchItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSearch\ToolStripSearch.resx">
+      <DependentUpon>ToolStripSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="列表控件\ComboAttribute.resx">
+      <DependentUpon>ComboAttribute.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="列表控件\ComboDept.resx">
+      <DependentUpon>ComboDept.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="列表控件\ComboSG.resx">
+      <DependentUpon>ComboSG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="列表控件\旧控件\Col_List.resx">
+      <DependentUpon>Col_List.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="列表控件\ComboClient.resx">
+      <DependentUpon>ComboClient.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="列表控件\原形\ComBoListCtrl.resx">
+      <DependentUpon>ComBoListCtrl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="列表控件\原形\FormColList.resx">
+      <DependentUpon>FormColList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\BillLog.resx">
+      <DependentUpon>BillLog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\BillLogItem.resx">
+      <DependentUpon>BillLogItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\GH_BillLog.resx">
+      <DependentUpon>GH_BillLog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\GH_BillLogItem.resx">
+      <DependentUpon>GH_BillLogItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\MonthPicker.resx">
+      <DependentUpon>MonthPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\SumColListDialog.resx">
+      <DependentUpon>SumColListDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\SumFG.resx">
+      <DependentUpon>SumFG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\TitleTextBox.resx">
+      <DependentUpon>TitleTextBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\YearMonth.resx">
+      <DependentUpon>YearMonth.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReFresh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorits.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

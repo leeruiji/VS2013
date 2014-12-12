@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46CD43D5-CBEF-43AD-9E7A-86F9EB39FF45}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DN500_Finance</RootNamespace>
+    <AssemblyName>DN500_Finance</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Retail_System\bin\Debug\dll\</OutputPath>
+    <DocumentationFile>DN500_Finance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Retail_System\bin\Release\dll\</OutputPath>
+    <DocumentationFile>DN500_Finance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '调试|AnyCPU' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\调试\</OutputPath>
+    <DocumentationFile>DN500_Finance.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PClass, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PClass\bin\Debug\PClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassMain.vb" />
+    <Compile Include="F500\F50001_Price_Msg.Designer.vb">
+      <DependentUpon>F50001_Price_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50001_Price_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50020_ProcessSort.Designer.vb">
+      <DependentUpon>F50020_ProcessSort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50020_ProcessSort.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50021_ProcessSort_Msg.Designer.vb">
+      <DependentUpon>F50021_ProcessSort_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50021_ProcessSort_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50010_ProcessPrice.Designer.vb">
+      <DependentUpon>F50010_ProcessPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50010_ProcessPrice.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50011_ProcessPrice_Msg.Designer.vb">
+      <DependentUpon>F50011_ProcessPrice_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50011_ProcessPrice_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50000_Price.Designer.vb">
+      <DependentUpon>F50000_Price.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50000_Price.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50040_PrinceSummary.Designer.vb">
+      <DependentUpon>F50040_PrinceSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50040_PrinceSummary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\wrong.Designer.vb">
+      <DependentUpon>wrong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\wrong.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50030_InnerPrice.Designer.vb">
+      <DependentUpon>F50030_InnerPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50030_InnerPrice.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50031_InnerPrice_Msg.Designer.vb">
+      <DependentUpon>F50031_InnerPrice_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50031_InnerPrice_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50012_IniTouch.Designer.vb">
+      <DependentUpon>F50012_IniTouch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50012_IniTouch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50013_IniTouch_Msg.Designer.vb">
+      <DependentUpon>F50013_IniTouch_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50013_IniTouch_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50032_PriceiTouch.Designer.vb">
+      <DependentUpon>F50032_PriceiTouch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50032_PriceiTouch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F500\F50033_PriceiTouch_Msg.Designer.vb">
+      <DependentUpon>F50033_PriceiTouch_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F500\F50033_PriceiTouch_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F501\F50100_BZSH_Balance.Designer.vb">
+      <DependentUpon>F50100_BZSH_Balance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F501\F50100_BZSH_Balance.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F501\F50101_BZSH_Balance_Msg.Designer.vb">
+      <DependentUpon>F50101_BZSH_Balance_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F501\F50101_BZSH_Balance_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\R50040_PrinceSummary.vb" />
+    <Compile Include="Report\R50000_InnerPrice.vb" />
+    <Compile Include="Report\R50000_Price_Client.vb" />
+    <Compile Include="Report\R50010_ProcessPrice.vb" />
+    <Compile Include="Report\R50100_BZSH_Balance.vb" />
+    <Compile Include="Report\R50000_Price.vb" />
+    <Compile Include="Report\R50012_ProcessiTouch.vb" />
+    <Compile Include="Report\R50032_SGiTouch.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="F500\F50001_Price_Msg.resx">
+      <DependentUpon>F50001_Price_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50020_ProcessSort.resx">
+      <DependentUpon>F50020_ProcessSort.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50021_ProcessSort_Msg.resx">
+      <DependentUpon>F50021_ProcessSort_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50010_ProcessPrice.resx">
+      <DependentUpon>F50010_ProcessPrice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50011_ProcessPrice_Msg.resx">
+      <DependentUpon>F50011_ProcessPrice_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50000_Price.resx">
+      <DependentUpon>F50000_Price.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50040_PrinceSummary.resx">
+      <DependentUpon>F50040_PrinceSummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\wrong.resx">
+      <DependentUpon>wrong.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50030_InnerPrice.resx">
+      <DependentUpon>F50030_InnerPrice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50031_InnerPrice_Msg.resx">
+      <DependentUpon>F50031_InnerPrice_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50012_IniTouch.resx">
+      <DependentUpon>F50012_IniTouch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50013_IniTouch_Msg.resx">
+      <DependentUpon>F50013_IniTouch_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50032_PriceiTouch.resx">
+      <DependentUpon>F50032_PriceiTouch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F500\F50033_PriceiTouch_Msg.resx">
+      <DependentUpon>F50033_PriceiTouch_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F501\F50100_BZSH_Balance.resx">
+      <DependentUpon>F50100_BZSH_Balance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F501\F50101_BZSH_Balance_Msg.resx">
+      <DependentUpon>F50101_BZSH_Balance_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\PBaseClass.vbproj">
+      <Project>{27F21734-C4E3-4D81-89F0-105BD0911189}</Project>
+      <Name>PBaseClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InValid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReFresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetValid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxgrproLib">
+      <Guid>{715CBE0F-4F50-46EF-B009-CACED3A5C868}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="grproLib">
+      <Guid>{715CBE0F-4F50-46EF-B009-CACED3A5C868}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large_icons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image_10010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder find1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChartChangeType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BZC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image_Goods.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

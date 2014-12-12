@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83F405C6-D89E-41A0-9458-A4B39EBEF225}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DN400_Store</RootNamespace>
+    <AssemblyName>DN400_Store</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Retail_System\bin\Debug\dll\</OutputPath>
+    <DocumentationFile>DN400_Store.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Retail_System\bin\Debug\Debug\</OutputPath>
+    <DocumentationFile>DN400_Store.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '调试|AnyCPU' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\调试\</OutputPath>
+    <DocumentationFile>DN400_Store.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PClass, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PClass\bin\Debug\PClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassMain.vb" />
+    <Compile Include="F400\F40000_BZSH.Designer.vb">
+      <DependentUpon>F40000_BZSH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F400\F40000_BZSH.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F400\F40001_BZSH_Msg.Designer.vb">
+      <DependentUpon>F40001_BZSH_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F400\F40001_BZSH_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F400\F40003_BZSH_ChangePrice.Designer.vb">
+      <DependentUpon>F40003_BZSH_ChangePrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F400\F40003_BZSH_ChangePrice.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F400\F40010_OutWork.Designer.vb">
+      <DependentUpon>F40010_OutWork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F400\F40010_OutWork.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F400\F40011_OutWork_Msg.Designer.vb">
+      <DependentUpon>F40011_OutWork_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F400\F40011_OutWork_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F401\F40160_KCmodify_Msg.Designer.vb">
+      <DependentUpon>F40160_KCmodify_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F401\F40160_KCmodify_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F401\F40100_PBRK.Designer.vb">
+      <DependentUpon>F40100_PBRK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F401\F40100_PBRK.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F401\F40101_PBRK_Msg.Designer.vb">
+      <DependentUpon>F40101_PBRK_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F401\F40101_PBRK_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F401\F40150_PBTC.Designer.vb">
+      <DependentUpon>F40150_PBTC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F401\F40150_PBTC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F401\F40151_PBTC_Msg.Designer.vb">
+      <DependentUpon>F40151_PBTC_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F401\F40151_PBTC_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F401\F40170_BUmodify_Msg.Designer.vb">
+      <DependentUpon>F40170_BUmodify_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F401\F40170_BUmodify_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F402\F40205_KUCUN_Msg.Designer.vb">
+      <DependentUpon>F40205_KUCUN_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F402\F40205_KUCUN_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F402\F40203_PBStore.Designer.vb">
+      <DependentUpon>F40203_PBStore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F402\F40203_PBStore.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F402\F40204_PBStore_Msg .Designer.vb">
+      <DependentUpon>F40204_PBStore_Msg .vb</DependentUpon>
+    </Compile>
+    <Compile Include="F402\F40204_PBStore_Msg .vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F402\F40200_SCPB.Designer.vb">
+      <DependentUpon>F40200_SCPB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F402\F40200_SCPB.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F402\F40201_SCPB_Msg.Designer.vb">
+      <DependentUpon>F40201_SCPB_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F402\F40201_SCPB_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F402\F40202_CancelPB_Log.Designer.vb">
+      <DependentUpon>F40202_CancelPB_Log.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F402\F40202_CancelPB_Log.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F403\F40300_CPRK.Designer.vb">
+      <DependentUpon>F40300_CPRK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F403\F40300_CPRK.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F403\F40301_CPRK_Msg.Designer.vb">
+      <DependentUpon>F40301_CPRK_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F403\F40301_CPRK_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F403\F40310_CPIni.Designer.vb">
+      <DependentUpon>F40310_CPIni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F403\F40310_CPIni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F403\F40311_CPIni_Msg.Designer.vb">
+      <DependentUpon>F40311_CPIni_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F403\F40311_CPIni_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F404\F40400_BCPRK.Designer.vb">
+      <DependentUpon>F40400_BCPRK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F404\F40400_BCPRK.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F404\F40401_BCPRK_Msg.Designer.vb">
+      <DependentUpon>F40401_BCPRK_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F404\F40401_BCPRK_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F404\F40410_DCRK.Designer.vb">
+      <DependentUpon>F40410_DCRK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F404\F40410_DCRK.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F404\F40411_DCRK_Msg.Designer.vb">
+      <DependentUpon>F40411_DCRK_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F404\F40411_DCRK_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F405\F40500_Store_Map.Designer.vb">
+      <DependentUpon>F40500_Store_Map.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F405\F40500_Store_Map.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F405\F40501_Map_Msg.Designer.vb">
+      <DependentUpon>F40501_Map_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F405\F40501_Map_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F409\F40940_QCSH_Summary.Designer.vb">
+      <DependentUpon>F40940_QCSH_Summary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F409\F40940_QCSH_Summary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F409\F40900_BZSH_Summary.Designer.vb">
+      <DependentUpon>F40900_BZSH_Summary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F409\F40900_BZSH_Summary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F409\F40910_BZSH_Mx.Designer.vb">
+      <DependentUpon>F40910_BZSH_Mx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F409\F40910_BZSH_Mx.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F409\F40951_PB_INOUT_Msg.Designer.vb">
+      <DependentUpon>F40951_PB_INOUT_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F409\F40951_PB_INOUT_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Report\R40100_PBRK.vb" />
+    <Compile Include="Report\R40204_PBStore.vb" />
+    <Compile Include="Report\R40500_Store_Map.vb" />
+    <Compile Include="Report\R40501_StoreNo_Left.vb" />
+    <Compile Include="Report\R40951_PB_INOUT.vb" />
+    <Compile Include="F409\F40920_PBDay.Designer.vb">
+      <DependentUpon>F40920_PBDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F409\F40920_PBDay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F409\F40930_CPDay.Designer.vb">
+      <DependentUpon>F40930_CPDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F409\F40930_CPDay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F409\F40950_PB_INOUT.Designer.vb">
+      <DependentUpon>F40950_PB_INOUT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F409\F40950_PB_INOUT.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module_SQL.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\R40950_PB_INOUT.vb" />
+    <Compile Include="Report\R40940_QCSH_Summary.vb" />
+    <Compile Include="Report\R40920_PBDay.vb" />
+    <Compile Include="Report\R40001_BZSH.vb" />
+    <Compile Include="Report\R40900_BZSH_Summary.vb" />
+    <Compile Include="Report\R40910_BZSH_Mx.vb" />
+    <Compile Include="Report\R40930_CPDay.vb" />
+    <Compile Include="Report\R40502_StoreNo_Right.vb" />
+    <Compile Include="Report\R40011_Outwork.vb" />
+    <Compile Include="Report\R40002_BZSH2.vb" />
+    <Compile Include="Report\R40301_CPRK.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="F400\F40000_BZSH.resx">
+      <DependentUpon>F40000_BZSH.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F400\F40001_BZSH_Msg.resx">
+      <DependentUpon>F40001_BZSH_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F400\F40003_BZSH_ChangePrice.resx">
+      <DependentUpon>F40003_BZSH_ChangePrice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F400\F40010_OutWork.resx">
+      <DependentUpon>F40010_OutWork.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F400\F40011_OutWork_Msg.resx">
+      <DependentUpon>F40011_OutWork_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F401\F40160_KCmodify_Msg.resx">
+      <DependentUpon>F40160_KCmodify_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F401\F40100_PBRK.resx">
+      <DependentUpon>F40100_PBRK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F401\F40101_PBRK_Msg.resx">
+      <DependentUpon>F40101_PBRK_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F401\F40150_PBTC.resx">
+      <DependentUpon>F40150_PBTC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F401\F40151_PBTC_Msg.resx">
+      <DependentUpon>F40151_PBTC_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F401\F40170_BUmodify_Msg.resx">
+      <DependentUpon>F40170_BUmodify_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F402\F40205_KUCUN_Msg.resx">
+      <DependentUpon>F40205_KUCUN_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F402\F40203_PBStore.resx">
+      <DependentUpon>F40203_PBStore.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F402\F40204_PBStore_Msg .resx">
+      <DependentUpon>F40204_PBStore_Msg .vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F402\F40200_SCPB.resx">
+      <DependentUpon>F40200_SCPB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F402\F40201_SCPB_Msg.resx">
+      <DependentUpon>F40201_SCPB_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F402\F40202_CancelPB_Log.resx">
+      <DependentUpon>F40202_CancelPB_Log.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F403\F40300_CPRK.resx">
+      <DependentUpon>F40300_CPRK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F403\F40301_CPRK_Msg.resx">
+      <DependentUpon>F40301_CPRK_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F403\F40310_CPIni.resx">
+      <DependentUpon>F40310_CPIni.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F403\F40311_CPIni_Msg.resx">
+      <DependentUpon>F40311_CPIni_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F404\F40400_BCPRK.resx">
+      <DependentUpon>F40400_BCPRK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F404\F40401_BCPRK_Msg.resx">
+      <DependentUpon>F40401_BCPRK_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F404\F40410_DCRK.resx">
+      <DependentUpon>F40410_DCRK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F404\F40411_DCRK_Msg.resx">
+      <DependentUpon>F40411_DCRK_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F405\F40500_Store_Map.resx">
+      <DependentUpon>F40500_Store_Map.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F405\F40501_Map_Msg.resx">
+      <DependentUpon>F40501_Map_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F409\F40940_QCSH_Summary.resx">
+      <DependentUpon>F40940_QCSH_Summary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F409\F40900_BZSH_Summary.resx">
+      <DependentUpon>F40900_BZSH_Summary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F409\F40910_BZSH_Mx.resx">
+      <DependentUpon>F40910_BZSH_Mx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F409\F40920_PBDay.resx">
+      <DependentUpon>F40920_PBDay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F409\F40930_CPDay.resx">
+      <DependentUpon>F40930_CPDay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F409\F40950_PB_INOUT.resx">
+      <DependentUpon>F40950_PB_INOUT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F409\F40951_PB_INOUT_Msg.resx">
+      <DependentUpon>F40951_PB_INOUT_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\PBaseClass.vbproj">
+      <Project>{27F21734-C4E3-4D81-89F0-105BD0911189}</Project>
+      <Name>PBaseClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReFresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.png" />
+    <None Include="Resources\34.png" />
+    <None Include="Resources\31.png" />
+    <None Include="Resources\43.png" />
+    <None Include="Resources\75.png" />
+    <None Include="Resources\A.PNG" />
+    <None Include="Resources\431.png" />
+    <None Include="Resources\181.png" />
+    <None Include="Resources\36.png" />
+    <Content Include="Resources\AddRow.png" />
+    <None Include="Resources\BZSH.JPG" />
+    <None Include="Resources\Delivery.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\apply.png" />
+    <None Include="Resources\PBRK.png" />
+    <None Include="Resources\PeiBu.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\InValid.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\file_temp.png" />
+    <None Include="Resources\Cmd_NewStoreNo.Image.png" />
+    <Content Include="Resources\Purchase.png" />
+    <Content Include="Resources\RemoveRow.png" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

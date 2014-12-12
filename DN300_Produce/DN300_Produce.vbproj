@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1F8FEA6-2999-4772-8309-3BBD44A6B727}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DN300_Produce</RootNamespace>
+    <AssemblyName>DN300_Produce</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Retail_System\bin\Debug\dll\</OutputPath>
+    <DocumentationFile>DN300_Produce.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Retail_System\bin\Debug\Debug\</OutputPath>
+    <DocumentationFile>DN300_Produce.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '调试|AnyCPU' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\调试\</OutputPath>
+    <DocumentationFile>DN300_Produce.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\Interop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PClass, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PClass\bin\Debug\PClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassMain.vb" />
+    <Compile Include="F30104_PG.Designer.vb">
+      <DependentUpon>F30104_PG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30104_PG.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30105_PG_Msg.Designer.vb">
+      <DependentUpon>F30105_PG_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30105_PG_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30112_KF.Designer.vb">
+      <DependentUpon>F30112_KF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30112_KF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30113_KF_Msg.Designer.vb">
+      <DependentUpon>F30113_KF_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30113_KF_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30226_Applique_Msg.Designer.vb">
+      <DependentUpon>F30226_Applique_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30226_Applique_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30225_Applique.Designer.vb">
+      <DependentUpon>F30225_Applique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30225_Applique.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30206_DayReport.Designer.vb">
+      <DependentUpon>F30206_DayReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30206_DayReport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30207_DayReport_Msg.Designer.vb">
+      <DependentUpon>F30207_DayReport_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30207_DayReport_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30220_QualityDayReport.Designer.vb">
+      <DependentUpon>F30220_QualityDayReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30220_QualityDayReport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30221_QualityDayReport_Msg.Designer.vb">
+      <DependentUpon>F30221_QualityDayReport_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30221_QualityDayReport_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30300_AT_EmployessSel.Designer.vb">
+      <DependentUpon>F30300_AT_EmployessSel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30300_AT_EmployessSel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30001_Produce_Gd_Msg.Designer.vb">
+      <DependentUpon>F30001_Produce_Gd_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30001_Produce_Gd_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30110_DProcess.Designer.vb">
+      <DependentUpon>F30110_DProcess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30110_DProcess.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30000_Produce_Gd.Designer.vb">
+      <DependentUpon>F30000_Produce_Gd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30000_Produce_Gd.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30002_Produce_CG.Designer.vb">
+      <DependentUpon>F30002_Produce_CG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30002_Produce_CG.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30003_AddBZ.Designer.vb">
+      <DependentUpon>F30003_AddBZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30003_AddBZ.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30004_Produce_Amount.Designer.vb">
+      <DependentUpon>F30004_Produce_Amount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30004_Produce_Amount.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30005_Produce_FD.Designer.vb">
+      <DependentUpon>F30005_Produce_FD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30005_Produce_FD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30100_Process.Designer.vb">
+      <DependentUpon>F30100_Process.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30100_Process.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30101_Produce_Msg.Designer.vb">
+      <DependentUpon>F30101_Produce_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30101_Produce_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30200_CPZL.Designer.vb">
+      <DependentUpon>F30200_CPZL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30200_CPZL.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30201_CPZL_Msg.Designer.vb">
+      <DependentUpon>F30201_CPZL_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30201_CPZL_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30202_CPZL_Input.Designer.vb">
+      <DependentUpon>F30202_CPZL_Input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30202_CPZL_Input.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30205_TZPB_Msg.Designer.vb">
+      <DependentUpon>F30205_TZPB_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30205_TZPB_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F309\F30900_LuoSe_DaySummary.Designer.vb">
+      <DependentUpon>F30900_LuoSe_DaySummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F309\F30900_LuoSe_DaySummary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F309\F30920_Energy.Designer.vb">
+      <DependentUpon>F30920_Energy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F309\F30920_Energy.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F309\F30930_PB_Match .Designer.vb">
+      <DependentUpon>F30930_PB_Match .vb</DependentUpon>
+    </Compile>
+    <Compile Include="F309\F30930_PB_Match .vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F309\F30940_GS_Count .Designer.vb">
+      <DependentUpon>F30940_GS_Count .vb</DependentUpon>
+    </Compile>
+    <Compile Include="F309\F30940_GS_Count .vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F309\F30950_LossEnergy.Designer.vb">
+      <DependentUpon>F30950_LossEnergy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F309\F30950_LossEnergy.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\R30104_PG.vb" />
+    <Compile Include="Report\R30225_Applique_List.vb" />
+    <Compile Include="Report\R30111_DProcess_JTSum.vb" />
+    <Compile Include="Report\R30111_DProcess_Msg.vb" />
+    <Compile Include="Report\R30207_DayReport_Msg.vb" />
+    <Compile Include="Report\R30221_QualityDayReport_Msg.vb" />
+    <Compile Include="Report\R30920_Energy.vb">
+    </Compile>
+    <Compile Include="Report\R10010_GoodsBarcode.vb" />
+    <Compile Include="Report\R30000_ProduceGd.vb" />
+    <Compile Include="Report\R30100_Process.vb" />
+    <Compile Include="Report\R30110_DProcess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Report\R30200_CPZL.vb" />
+    <Compile Include="Report\R30900_LuoSe_DaySummary.vb" />
+    <Compile Include="F30006_Produce_TP.Designer.vb">
+      <DependentUpon>F30006_Produce_TP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30006_Produce_TP.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30007_Produce_CG_BeforePB.Designer.vb">
+      <DependentUpon>F30007_Produce_CG_BeforePB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30007_Produce_CG_BeforePB.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30111_DProcess_Msg.Designer.vb">
+      <DependentUpon>F30111_DProcess_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30111_DProcess_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\R30921_EnergyDate.vb" />
+    <Compile Include="Report\R30930_PB_Match.vb" />
+    <Compile Include="Report\R30227_GHSQ_List.vb" />
+    <Compile Include="F30227_GHSQ.Designer.vb">
+      <DependentUpon>F30227_GHSQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30227_GHSQ.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30228_GHSQ_Msg.Designer.vb">
+      <DependentUpon>F30228_GHSQ_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30228_GHSQ_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30231_RetrunInform.Designer.vb">
+      <DependentUpon>F30231_RetrunInform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30231_RetrunInform.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30232_RetrunInform_Msg.Designer.vb">
+      <DependentUpon>F30232_RetrunInform_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30232_RetrunInform_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\R30231_RetrunInform.vb">
+    </Compile>
+    <Compile Include="F30229_GSSQ.Designer.vb">
+      <DependentUpon>F30229_GSSQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30229_GSSQ.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F30230_GSSQ_Msg.Designer.vb">
+      <DependentUpon>F30230_GSSQ_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F30230_GSSQ_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\R30229_GSSQ_List.vb" />
+    <Compile Include="Report\R30940_GS_Count.vb" />
+    <Compile Include="Report\R30950_LossEnergy.vb" />
+    <Compile Include="运转单控件\ConfirmBox.Designer.vb">
+      <DependentUpon>ConfirmBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="运转单控件\ConfirmBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运转单控件\PeiBuList.Designer.vb">
+      <DependentUpon>PeiBuList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="运转单控件\PeiBuList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="运转单控件\WinMaxForm.Designer.vb">
+      <DependentUpon>WinMaxForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="运转单控件\WinMaxForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="F30104_PG.resx">
+      <DependentUpon>F30104_PG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30105_PG_Msg.resx">
+      <DependentUpon>F30105_PG_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30112_KF.resx">
+      <DependentUpon>F30112_KF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30113_KF_Msg.resx">
+      <DependentUpon>F30113_KF_Msg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30226_Applique_Msg.resx">
+      <DependentUpon>F30226_Applique_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30225_Applique.resx">
+      <DependentUpon>F30225_Applique.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30206_DayReport.resx">
+      <DependentUpon>F30206_DayReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30207_DayReport_Msg.resx">
+      <DependentUpon>F30207_DayReport_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30220_QualityDayReport.resx">
+      <DependentUpon>F30220_QualityDayReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30221_QualityDayReport_Msg.resx">
+      <DependentUpon>F30221_QualityDayReport_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30300_AT_EmployessSel.resx">
+      <DependentUpon>F30300_AT_EmployessSel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30001_Produce_Gd_Msg.resx">
+      <DependentUpon>F30001_Produce_Gd_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30110_DProcess.resx">
+      <DependentUpon>F30110_DProcess.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30000_Produce_Gd.resx">
+      <DependentUpon>F30000_Produce_Gd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30002_Produce_CG.resx">
+      <DependentUpon>F30002_Produce_CG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30003_AddBZ.resx">
+      <DependentUpon>F30003_AddBZ.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30004_Produce_Amount.resx">
+      <DependentUpon>F30004_Produce_Amount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30005_Produce_FD.resx">
+      <DependentUpon>F30005_Produce_FD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30100_Process.resx">
+      <DependentUpon>F30100_Process.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30101_Produce_Msg.resx">
+      <DependentUpon>F30101_Produce_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30200_CPZL.resx">
+      <DependentUpon>F30200_CPZL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30201_CPZL_Msg.resx">
+      <DependentUpon>F30201_CPZL_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30202_CPZL_Input.resx">
+      <DependentUpon>F30202_CPZL_Input.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30205_TZPB_Msg.resx">
+      <DependentUpon>F30205_TZPB_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F309\F30900_LuoSe_DaySummary.resx">
+      <DependentUpon>F30900_LuoSe_DaySummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F309\F30920_Energy.resx">
+      <DependentUpon>F30920_Energy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F309\F30930_PB_Match .resx">
+      <DependentUpon>F30930_PB_Match .vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F309\F30940_GS_Count .resx">
+      <DependentUpon>F30940_GS_Count .vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F309\F30950_LossEnergy.resx">
+      <DependentUpon>F30950_LossEnergy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30006_Produce_TP.resx">
+      <DependentUpon>F30006_Produce_TP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30007_Produce_CG_BeforePB.resx">
+      <DependentUpon>F30007_Produce_CG_BeforePB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30111_DProcess_Msg.resx">
+      <DependentUpon>F30111_DProcess_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30227_GHSQ.resx">
+      <DependentUpon>F30227_GHSQ.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30228_GHSQ_Msg.resx">
+      <DependentUpon>F30228_GHSQ_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30231_RetrunInform.resx">
+      <DependentUpon>F30231_RetrunInform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30232_RetrunInform_Msg.resx">
+      <DependentUpon>F30232_RetrunInform_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30229_GSSQ.resx">
+      <DependentUpon>F30229_GSSQ.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F30230_GSSQ_Msg.resx">
+      <DependentUpon>F30230_GSSQ_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运转单控件\ConfirmBox.resx">
+      <DependentUpon>ConfirmBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运转单控件\PeiBuList.resx">
+      <DependentUpon>PeiBuList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运转单控件\WinMaxForm.resx">
+      <DependentUpon>WinMaxForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReFresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\PBaseClass.vbproj">
+      <Project>{27F21734-C4E3-4D81-89F0-105BD0911189}</Project>
+      <Name>PBaseClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DN220_kitchenStore\DN220_kitchenStore.vbproj">
+      <Project>{3362D2A3-D1F6-42BF-9110-28416D936EDF}</Project>
+      <Name>DN220_kitchenStore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Produce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetValid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InValid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.Gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cascate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_previewTm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

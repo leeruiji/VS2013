@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B5884AC-0C2F-4967-8F05-B301B34C150C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DN100_BasicInfo</RootNamespace>
+    <AssemblyName>DN100_BasicInfo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Retail_System\bin\Debug\dll\</OutputPath>
+    <DocumentationFile>DN100_BasicInfo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Retail_System\bin\Debug\Debug\</OutputPath>
+    <DocumentationFile>DN100_BasicInfo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '调试|AnyCPU' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\调试\</OutputPath>
+    <DocumentationFile>DN100_BasicInfo.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PClass, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PClass\bin\Debug\PClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassMain.vb" />
+    <Compile Include="F100\ChooseReNew_WL.Designer.vb">
+      <DependentUpon>ChooseReNew_WL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\ChooseReNew_WL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F100\F10005_CostChange.Designer.vb">
+      <DependentUpon>F10005_CostChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10005_CostChange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10006_CostChange_Msg.Designer.vb">
+      <DependentUpon>F10006_CostChange_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10006_CostChange_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10004_WL_Sel.Designer.vb">
+      <DependentUpon>F10004_WL_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10004_WL_Sel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10012_ClientBZ_Sel.Designer.vb">
+      <DependentUpon>F10012_ClientBZ_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10012_ClientBZ_Sel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10022_BZC_PF.Designer.vb">
+      <DependentUpon>F10022_BZC_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10022_BZC_PF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10025_BZC_Report.Designer.vb">
+      <DependentUpon>F10025_BZC_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10025_BZC_Report.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10050_Work.Designer.vb">
+      <DependentUpon>F10050_Work.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10050_Work.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10051_Work_Msg.Designer.vb">
+      <DependentUpon>F10051_Work_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10051_Work_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10052_WorkList.Designer.vb">
+      <DependentUpon>F10052_WorkList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10052_WorkList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10053_WorkList_Msg.Designer.vb">
+      <DependentUpon>F10053_WorkList_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10053_WorkList_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10060_BZC.Designer.vb">
+      <DependentUpon>F10060_BZC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10060_BZC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10061_PF.Designer.vb">
+      <DependentUpon>F10061_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10061_PF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10013_WL_Type_Attribute.Designer.vb">
+      <DependentUpon>F10013_WL_Type_Attribute.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10013_WL_Type_Attribute.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10070_ReProject.Designer.vb">
+      <DependentUpon>F10070_ReProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10070_ReProject.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10014_WL_Type_Attribute_Msg.Designer.vb">
+      <DependentUpon>F10014_WL_Type_Attribute_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10014_WL_Type_Attribute_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10071_ReProject_Msg.Designer.vb">
+      <DependentUpon>F10071_ReProject_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10071_ReProject_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10072_ReProject_Sel.Designer.vb">
+      <DependentUpon>F10072_ReProject_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10072_ReProject_Sel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10080_department_Sel.Designer.vb">
+      <DependentUpon>F10080_department_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10080_department_Sel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10007_WL_Name.Designer.vb">
+      <DependentUpon>F10007_WL_Name.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10007_WL_Name.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10008_WL_Name_Msg.Designer.vb">
+      <DependentUpon>F10008_WL_Name_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10008_WL_Name_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F103\F10300_DPGY.Designer.vb">
+      <DependentUpon>F10300_DPGY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F103\F10300_DPGY.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F103\F10301_DPGY_Msg.Designer.vb">
+      <DependentUpon>F10301_DPGY_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F103\F10301_DPGY_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F103\F10310_SSGY.Designer.vb">
+      <DependentUpon>F10310_SSGY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F103\F10310_SSGY.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F103\F10311_SSGY_Msg.Designer.vb">
+      <DependentUpon>F10311_SSGY_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F103\F10311_SSGY_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F103\F10335_SGGY.Designer.vb">
+      <DependentUpon>F10335_SGGY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F103\F10335_SGGY.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10040_RBPF.Designer.vb">
+      <DependentUpon>F10040_RBPF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10040_RBPF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10041_RBPF_Msg.Designer.vb">
+      <DependentUpon>F10041_RBPF_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10041_RBPF_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10042_RBPF_PF.Designer.vb">
+      <DependentUpon>F10042_RBPF_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10042_RBPF_PF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10043_RBPF_Sel.Designer.vb">
+      <DependentUpon>F10043_RBPF_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10043_RBPF_Sel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F103\F10336_SGGY_Msg.Designer.vb">
+      <DependentUpon>F10336_SGGY_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F103\F10336_SGGY_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\R10010_BZ.vb" />
+    <Compile Include="Report\R10061_PF.vb" />
+    <Compile Include="Report\R10000_Goods_List.vb" />
+    <Compile Include="Report\R10020_BZC.vb" />
+    <Compile Include="Report\R10025_BZC_Report.vb" />
+    <Compile Include="控件\ClinetBZTree.Designer.vb">
+      <DependentUpon>ClinetBZTree.vb</DependentUpon>
+    </Compile>
+    <Compile Include="控件\ClinetBZTree.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10002_GoodsType_Msg.Designer.vb">
+      <DependentUpon>F10002_GoodsType_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10002_GoodsType_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10003_GoodsType_Sel.Designer.vb">
+      <DependentUpon>F10003_GoodsType_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10003_GoodsType_Sel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10020_BZC.Designer.vb">
+      <DependentUpon>F10020_BZC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10020_BZC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10000_WL.Designer.vb">
+      <DependentUpon>F10000_WL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10000_WL.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10001_WL_Msg.Designer.vb">
+      <DependentUpon>F10001_WL_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10001_WL_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10030_GY.Designer.vb">
+      <DependentUpon>F10030_GY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10030_GY.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10031_GY_Msg.Designer.vb">
+      <DependentUpon>F10031_GY_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10031_GY_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10032_GY_Image.Designer.vb">
+      <DependentUpon>F10032_GY_Image.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10032_GY_Image.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="控件\GoodsTypeTree.Designer.vb">
+      <DependentUpon>GoodsTypeTree.vb</DependentUpon>
+    </Compile>
+    <Compile Include="控件\GoodsTypeTree.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\Module_Dao.vb" />
+    <Compile Include="F100\Module_SQL.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="F100\F10010_BZ.Designer.vb">
+      <DependentUpon>F10010_BZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10010_BZ.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10011_BZ_Msg.Designer.vb">
+      <DependentUpon>F10011_BZ_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10011_BZ_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F100\F10021_BZC_Msg.Designer.vb">
+      <DependentUpon>F10021_BZC_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F100\F10021_BZC_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="F100\ChooseReNew_WL.resx">
+      <DependentUpon>ChooseReNew_WL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10005_CostChange.resx">
+      <DependentUpon>F10005_CostChange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10006_CostChange_Msg.resx">
+      <DependentUpon>F10006_CostChange_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10002_GoodsType_Msg.resx">
+      <DependentUpon>F10002_GoodsType_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10003_GoodsType_Sel.resx">
+      <DependentUpon>F10003_GoodsType_Sel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10004_WL_Sel.resx">
+      <DependentUpon>F10004_WL_Sel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10012_ClientBZ_Sel.resx">
+      <DependentUpon>F10012_ClientBZ_Sel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10020_BZC.resx">
+      <DependentUpon>F10020_BZC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10000_WL.resx">
+      <DependentUpon>F10000_WL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10001_WL_Msg.resx">
+      <DependentUpon>F10001_WL_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10022_BZC_PF.resx">
+      <DependentUpon>F10022_BZC_PF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10025_BZC_Report.resx">
+      <DependentUpon>F10025_BZC_Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10030_GY.resx">
+      <DependentUpon>F10030_GY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10031_GY_Msg.resx">
+      <DependentUpon>F10031_GY_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10032_GY_Image.resx">
+      <DependentUpon>F10032_GY_Image.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10050_Work.resx">
+      <DependentUpon>F10050_Work.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10051_Work_Msg.resx">
+      <DependentUpon>F10051_Work_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10052_WorkList.resx">
+      <DependentUpon>F10052_WorkList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10053_WorkList_Msg.resx">
+      <DependentUpon>F10053_WorkList_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10060_BZC.resx">
+      <DependentUpon>F10060_BZC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10061_PF.resx">
+      <DependentUpon>F10061_PF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10013_WL_Type_Attribute.resx">
+      <DependentUpon>F10013_WL_Type_Attribute.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10070_ReProject.resx">
+      <DependentUpon>F10070_ReProject.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10014_WL_Type_Attribute_Msg.resx">
+      <DependentUpon>F10014_WL_Type_Attribute_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10071_ReProject_Msg.resx">
+      <DependentUpon>F10071_ReProject_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10072_ReProject_Sel.resx">
+      <DependentUpon>F10072_ReProject_Sel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10080_department_Sel.resx">
+      <DependentUpon>F10080_department_Sel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10007_WL_Name.resx">
+      <DependentUpon>F10007_WL_Name.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10008_WL_Name_Msg.resx">
+      <DependentUpon>F10008_WL_Name_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F103\F10300_DPGY.resx">
+      <DependentUpon>F10300_DPGY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F103\F10301_DPGY_Msg.resx">
+      <DependentUpon>F10301_DPGY_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F103\F10310_SSGY.resx">
+      <DependentUpon>F10310_SSGY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F103\F10311_SSGY_Msg.resx">
+      <DependentUpon>F10311_SSGY_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F103\F10335_SGGY.resx">
+      <DependentUpon>F10335_SGGY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10040_RBPF.resx">
+      <DependentUpon>F10040_RBPF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10041_RBPF_Msg.resx">
+      <DependentUpon>F10041_RBPF_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10042_RBPF_PF.resx">
+      <DependentUpon>F10042_RBPF_PF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10043_RBPF_Sel.resx">
+      <DependentUpon>F10043_RBPF_Sel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F103\F10336_SGGY_Msg.resx">
+      <DependentUpon>F10336_SGGY_Msg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="控件\ClinetBZTree.resx">
+      <DependentUpon>ClinetBZTree.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="控件\GoodsTypeTree.resx">
+      <DependentUpon>GoodsTypeTree.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10010_BZ.resx">
+      <DependentUpon>F10010_BZ.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10011_BZ_Msg.resx">
+      <DependentUpon>F10011_BZ_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F100\F10021_BZC_Msg.resx">
+      <DependentUpon>F10021_BZC_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glossy_ecommerce_011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cmd_Open.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cmd_Open_On.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cmd_Save.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cmd_Save_On.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kombine_toolbar_038.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\PBaseClass.vbproj">
+      <Project>{27F21734-C4E3-4D81-89F0-105BD0911189}</Project>
+      <Name>PBaseClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Look_All.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReFresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cell_Click.PNG" />
+    <None Include="Resources\Cell_OnClick.PNG" />
+    <None Include="Resources\BZC.png" />
+    <None Include="Resources\apply.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\bt_play.png" />
+    <None Include="Resources\bt_stop.png" />
+    <None Include="Resources\37.png" />
+    <None Include="Resources\27.png" />
+    <None Include="Resources\90.png" />
+    <None Include="Resources\36.png" />
+    <Content Include="Resources\Client.png" />
+    <None Include="Resources\down.png" />
+    <Content Include="Resources\Employee.png" />
+    <None Include="Resources\GY.png" />
+    <None Include="Resources\GX.png" />
+    <None Include="Resources\GXJ.png" />
+    <None Include="Resources\GX_Min.png" />
+    <None Include="Resources\file_apply.png" />
+    <Content Include="Resources\Image_Goods.png" />
+    <None Include="Resources\loading.gif" />
+    <Content Include="Resources\Node.png" />
+    <Content Include="Resources\NodeSelected.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Paste1.png" />
+    <None Include="Resources\print.png" />
+    <Content Include="Resources\Supplier.png" />
+    <None Include="Resources\up.png" />
+    <Content Include="Resources\User.png" />
+    <None Include="Resources\WL_Min.png" />
+    <None Include="Resources\WL.png" />
+    <None Include="Resources\X%408}U9MLE}EBUE273%29]9PGF.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A67A3D1-322B-435D-BA4F-CC2388DAF93F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DN270_Business</RootNamespace>
+    <AssemblyName>DN270_Business</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Retail_System\bin\Debug\dll\</OutputPath>
+    <DocumentationFile>DN270_Business.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Retail_System\bin\Release\dll\</OutputPath>
+    <DocumentationFile>DN270_Business.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '调试|AnyCPU' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\调试\</OutputPath>
+    <DocumentationFile>DN270_Business.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PClass, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PClass\bin\Debug\PClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassMain.vb" />
+    <Compile Include="F270\F27000_ClientOrder.Designer.vb">
+      <DependentUpon>F27000_ClientOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F270\F27000_ClientOrder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F270\F27001_ClientOrder_Msg.Designer.vb">
+      <DependentUpon>F27001_ClientOrder_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F270\F27001_ClientOrder_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F271\F27130_AssembleOrder.Designer.vb">
+      <DependentUpon>F27130_AssembleOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F271\F27130_AssembleOrder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F271\F27110_ProduceOrder.Designer.vb">
+      <DependentUpon>F27110_ProduceOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F271\F27110_ProduceOrder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F271\F27131_AssembleOrder_Msg.Designer.vb">
+      <DependentUpon>F27131_AssembleOrder_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F271\F27131_AssembleOrder_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F271\F27111_ProduceOrder_Msg.Designer.vb">
+      <DependentUpon>F27111_ProduceOrder_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F271\F27111_ProduceOrder_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F271\F27100_Process.designer.vb">
+      <DependentUpon>F27100_Process.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F271\F27100_Process.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F271\F27120_Schedule.Designer.vb">
+      <DependentUpon>F27120_Schedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F271\F27120_Schedule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F271\F27121_Schedule_Msg.Designer.vb">
+      <DependentUpon>F27121_Schedule_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F271\F27121_Schedule_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F271\F27140_ProLiLiao.Designer.vb">
+      <DependentUpon>F27140_ProLiLiao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F271\F27140_ProLiLiao.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F271\F27141_ProLiLiao_Msg.Designer.vb">
+      <DependentUpon>F27141_ProLiLiao_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F271\F27141_ProLiLiao_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F272\F27200_Delivery.Designer.vb">
+      <DependentUpon>F27200_Delivery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F272\F27200_Delivery.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F272\F27201_Delivery_Msg.Designer.vb">
+      <DependentUpon>F27201_Delivery_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F272\F27201_Delivery_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F272\F27210_ReturnGoods.Designer.vb">
+      <DependentUpon>F27210_ReturnGoods.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F272\F27210_ReturnGoods.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F272\F27211_ReturnGoods_Msg.Designer.vb">
+      <DependentUpon>F27211_ReturnGoods_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F272\F27211_ReturnGoods_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F273\F27300_BH_List.Designer.vb">
+      <DependentUpon>F27300_BH_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F273\F27300_BH_List.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\R27140_ProLiLiao.vb" />
+    <Compile Include="Report\R27300_BH_List.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb" />
+    <Compile Include="F271\ProduceOrderSel.Designer.vb">
+      <DependentUpon>ProduceOrderSel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F271\ProduceOrderSel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\R27000_ClientOrder.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="F270\F27000_ClientOrder.resx">
+      <DependentUpon>F27000_ClientOrder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F270\F27001_ClientOrder_Msg.resx">
+      <DependentUpon>F27001_ClientOrder_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F271\F27130_AssembleOrder.resx">
+      <DependentUpon>F27130_AssembleOrder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F271\F27110_ProduceOrder.resx">
+      <DependentUpon>F27110_ProduceOrder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F271\F27131_AssembleOrder_Msg.resx">
+      <DependentUpon>F27131_AssembleOrder_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F271\F27111_ProduceOrder_Msg.resx">
+      <DependentUpon>F27111_ProduceOrder_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F271\F27100_Process.resx">
+      <DependentUpon>F27100_Process.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F271\F27120_Schedule.resx">
+      <DependentUpon>F27120_Schedule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F271\F27121_Schedule_Msg.resx">
+      <DependentUpon>F27121_Schedule_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F271\F27140_ProLiLiao.resx">
+      <DependentUpon>F27140_ProLiLiao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F271\F27141_ProLiLiao_Msg.resx">
+      <DependentUpon>F27141_ProLiLiao_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F272\F27200_Delivery.resx">
+      <DependentUpon>F27200_Delivery.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F272\F27201_Delivery_Msg.resx">
+      <DependentUpon>F27201_Delivery_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F272\F27210_ReturnGoods.resx">
+      <DependentUpon>F27210_ReturnGoods.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F272\F27211_ReturnGoods_Msg.resx">
+      <DependentUpon>F27211_ReturnGoods_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F273\F27300_BH_List.resx">
+      <DependentUpon>F27300_BH_List.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F271\ProduceOrderSel.resx">
+      <DependentUpon>ProduceOrderSel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReFresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\PBaseClass.vbproj">
+      <Project>{27F21734-C4E3-4D81-89F0-105BD0911189}</Project>
+      <Name>PBaseClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Produce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetValid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InValid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChartChangeType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large_icons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BZC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image_Goods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cascate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

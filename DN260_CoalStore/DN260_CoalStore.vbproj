@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B183469A-1006-43BD-A86E-2205640ABD3B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DN260_CoalStore</RootNamespace>
+    <AssemblyName>DN260_CoalStore</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Retail_System\bin\Debug\dll\</OutputPath>
+    <DocumentationFile>DN260_CoalStore.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Retail_System\bin\Release\dll\</OutputPath>
+    <DocumentationFile>DN260_CoalStore.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '调试|AnyCPU' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\调试\</OutputPath>
+    <DocumentationFile>DN260_CoalStore.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic, Version=2.5.20051.200, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\公共引用\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PClass, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PClass\bin\Debug\PClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="F260\F26005_CostChange.Designer.vb">
+      <DependentUpon>F26005_CostChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F260\F26005_CostChange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F260\F26006_CostChange_Msg.Designer.vb">
+      <DependentUpon>F26006_CostChange_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F260\F26006_CostChange_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F260\F26020_Supplier.Designer.vb">
+      <DependentUpon>F26020_Supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F260\F26020_Supplier.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F260\F26021_Supplier_Msg.Designer.vb">
+      <DependentUpon>F26021_Supplier_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F260\F26021_Supplier_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F260\F26002_WLCoal_Sel.Designer.vb">
+      <DependentUpon>F26002_WLCoal_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F260\F26002_WLCoal_Sel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F260\F26000_WLCoal.Designer.vb">
+      <DependentUpon>F26000_WLCoal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F260\F26000_WLCoal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F260\F26001_WLCoal_Msg.Designer.vb">
+      <DependentUpon>F26001_WLCoal_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F260\F26001_WLCoal_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F260\F26011_GoodsType_Msg.Designer.vb">
+      <DependentUpon>F26011_GoodsType_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F260\F26011_GoodsType_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F260\F26010_GoodsType_Sel.Designer.vb">
+      <DependentUpon>F26010_GoodsType_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F260\F26010_GoodsType_Sel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F260\GoodsTypeTree.Designer.vb">
+      <DependentUpon>GoodsTypeTree.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F260\GoodsTypeTree.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F260\R26000_Goods_List.vb" />
+    <Compile Include="F263\F26310_LingLiao.Designer.vb">
+      <DependentUpon>F26310_LingLiao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F263\F26310_LingLiao.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F263\F26311_LingLiao_Msg.Designer.vb">
+      <DependentUpon>F26311_LingLiao_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F263\F26311_LingLiao_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F264\F26400_StockAdjust.Designer.vb">
+      <DependentUpon>F26400_StockAdjust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F264\F26400_StockAdjust.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F264\F26401_StockAdjust_Msg.Designer.vb">
+      <DependentUpon>F26401_StockAdjust_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F264\F26401_StockAdjust_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F269\F26900_Store_Summary.Designer.vb">
+      <DependentUpon>F26900_Store_Summary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F269\F26900_Store_Summary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F269\F26910_JXC.Designer.vb">
+      <DependentUpon>F26910_JXC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F269\F26910_JXC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassMain.vb" />
+    <Compile Include="F261\F26100_Purchase.Designer.vb">
+      <DependentUpon>F26100_Purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F261\F26100_Purchase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F261\F26101_Purchase_Msg.Designer.vb">
+      <DependentUpon>F26101_Purchase_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F261\F26101_Purchase_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F261\F26102_Purchase_Sel.Designer.vb">
+      <DependentUpon>F26102_Purchase_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F261\F26102_Purchase_Sel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F261\F26110_PurchaseReturn.Designer.vb">
+      <DependentUpon>F26110_PurchaseReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F261\F26110_PurchaseReturn.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F261\F26111_PurchaseReturn_Msg.Designer.vb">
+      <DependentUpon>F26111_PurchaseReturn_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F261\F26111_PurchaseReturn_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F262\F26200_StoreIn.Designer.vb">
+      <DependentUpon>F26200_StoreIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F262\F26200_StoreIn.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F262\F26201_StoreIn_Msg.Designer.vb">
+      <DependentUpon>F26201_StoreIn_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F262\F26201_StoreIn_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F263\F26300_StoreOut.Designer.vb">
+      <DependentUpon>F26300_StoreOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F263\F26300_StoreOut.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F263\F26301_StoreOut_Msg.Designer.vb">
+      <DependentUpon>F26301_StoreOut_Msg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F263\F26301_StoreOut_Msg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F269\F26920_LingLiaoSummary.Designer.vb">
+      <DependentUpon>F26920_LingLiaoSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F269\F26920_LingLiaoSummary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\R26400_StockAdjust_List.vb" />
+    <Compile Include="Report\R26920_LingLiaoSummary.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="F261\R26101_Purchase_List.vb" />
+    <Compile Include="F261\R26111_PurchaseReturn_List.vb" />
+    <Compile Include="F262\R26200_StoreIn.vb" />
+    <Compile Include="F263\R26300_StoreOut.vb" />
+    <Compile Include="F263\R26310_LingLiao.vb" />
+    <Compile Include="Report\R26900_Store_Summary.vb" />
+    <Compile Include="Report\R26910_JXC.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="F260\F26005_CostChange.resx">
+      <DependentUpon>F26005_CostChange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F260\F26006_CostChange_Msg.resx">
+      <DependentUpon>F26006_CostChange_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F260\F26020_Supplier.resx">
+      <DependentUpon>F26020_Supplier.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F260\F26021_Supplier_Msg.resx">
+      <DependentUpon>F26021_Supplier_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F260\F26002_WLCoal_Sel.resx">
+      <DependentUpon>F26002_WLCoal_Sel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F260\F26000_WLCoal.resx">
+      <DependentUpon>F26000_WLCoal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F260\F26001_WLCoal_Msg.resx">
+      <DependentUpon>F26001_WLCoal_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F260\F26011_GoodsType_Msg.resx">
+      <DependentUpon>F26011_GoodsType_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F260\F26010_GoodsType_Sel.resx">
+      <DependentUpon>F26010_GoodsType_Sel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F260\GoodsTypeTree.resx">
+      <DependentUpon>GoodsTypeTree.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F263\F26310_LingLiao.resx">
+      <DependentUpon>F26310_LingLiao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F263\F26311_LingLiao_Msg.resx">
+      <DependentUpon>F26311_LingLiao_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F264\F26400_StockAdjust.resx">
+      <DependentUpon>F26400_StockAdjust.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F264\F26401_StockAdjust_Msg.resx">
+      <DependentUpon>F26401_StockAdjust_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F269\F26900_Store_Summary.resx">
+      <DependentUpon>F26900_Store_Summary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F269\F26910_JXC.resx">
+      <DependentUpon>F26910_JXC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F261\F26100_Purchase.resx">
+      <DependentUpon>F26100_Purchase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F261\F26101_Purchase_Msg.resx">
+      <DependentUpon>F26101_Purchase_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F261\F26102_Purchase_Sel.resx">
+      <DependentUpon>F26102_Purchase_Sel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F261\F26110_PurchaseReturn.resx">
+      <DependentUpon>F26110_PurchaseReturn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F261\F26111_PurchaseReturn_Msg.resx">
+      <DependentUpon>F26111_PurchaseReturn_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F262\F26200_StoreIn.resx">
+      <DependentUpon>F26200_StoreIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F262\F26201_StoreIn_Msg.resx">
+      <DependentUpon>F26201_StoreIn_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F263\F26300_StoreOut.resx">
+      <DependentUpon>F26300_StoreOut.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F263\F26301_StoreOut_Msg.resx">
+      <DependentUpon>F26301_StoreOut_Msg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F269\F26920_LingLiaoSummary.resx">
+      <DependentUpon>F26920_LingLiaoSummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReFresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\PBaseClass.vbproj">
+      <Project>{27F21734-C4E3-4D81-89F0-105BD0911189}</Project>
+      <Name>PBaseClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Produce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetValid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InValid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChartChangeType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large_icons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BZC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image_Goods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bt_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bt_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Look_All.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
