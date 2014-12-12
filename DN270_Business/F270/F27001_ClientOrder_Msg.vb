@@ -186,6 +186,7 @@ Public Class F27001_ClientOrder_Msg
                     Next
                     dtList2.AcceptChanges()
                     Fg1.DtToSetFG(dtList2)
+                    '''根据采购单是否已确定采购日期
                     If Not Purchase_State Then
                         Dim PurchaseWL As DataTable = GetPurchaseWL()
                         If PurchaseWL.Rows.Count = 0 Then
